@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        p{
+            background-color: rgb(153, 115, 137);
+            color: aliceblue;
+            padding:1em;
+        }
+        form{
+            text-align: center;
+            max-width: 550px;
+            margin: auto;
+            padding:1em;
+        }
+    </style>
 </head>
 <body>
-    
+    <form action="" id="usrform">
+        <p>
+        <label for="Name">Name: <br></label>
+        <input type="text" name="Name"><br>
+        </p>
+
+        <p>
+        <label for="Email">Email: <br></label>
+        <input type="text" name="Email"><br>
+    </p>
+    <p>
+        <label for="Message">Message: <br></label>
+        <textarea name="Message" form="usrform"></textarea><br>
+    </p>
+    <input type="submit" value="Submit">
+    </form>
+        
 </body>
 </html>
