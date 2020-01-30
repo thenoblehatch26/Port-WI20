@@ -34,11 +34,13 @@ export function qsa(query){
 
 export function bindTouch(selector, callback){
     qs(selector).addEventListener('touchend', (e) =>{
-        e.preventDefault();
+        // e.preventDefault();
+        console.log("touch", this);
         callback();
     });    
     qs(selector).addEventListener('click', (e) =>{
         callback();
+        console.log("click", this);
     })
 }
 

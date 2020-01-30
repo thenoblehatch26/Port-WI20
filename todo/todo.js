@@ -1,4 +1,4 @@
-import {qs, qsa} from './utilities.js'
+import {qs, qsa, bindTouch} from './utilities.js'
 
 let toDoList = [];
 
@@ -8,7 +8,7 @@ function saveTodo(toDo){
 
 export default class todo {
     constructor(){
-
+        bindTouch('#newTodoButton' , this.addNewTodo)
     }
     listTodos(){
 
@@ -19,7 +19,7 @@ export default class todo {
         //save to the datastore
         saveTodo(todoText.value);
         //list todos
-        listTodos();
+        this.listTodos();
     }
     removeTodo(id){
 
