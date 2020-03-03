@@ -1,0 +1,53 @@
+<!doctype html>
+
+<h1>Mountains</h1>
+
+<div id="mountains"></div>
+
+<script>
+  const MOUNTAINS = [
+    {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
+    {name: "Everest", height: 8848, place: "Nepal"},
+    {name: "Mount Fuji", height: 3776, place: "Japan"},
+    {name: "Vaalserberg", height: 323, place: "Netherlands"},
+    {name: "Denali", height: 6168, place: "United States"},
+    {name: "Popocatepetl", height: 5465, place: "Mexico"},
+    {name: "Mont Blanc", height: 4808, place: "Italy/France"}
+  ];
+
+  // Your code here
+  
+  function createElement (tag,text,id) {
+	el = document.createElement(tag);
+    el.textContent = text;
+    el.setAttribute("id", id);
+	return el
+	}
+  
+  var tableMaker = createElement("table","","master");
+  var tableRow = createElement("tr","","topRow");
+  var named = createElement("th",'Name','Name');
+  var high = createElement("th","Height","Height");
+  var place = createElement("th","Place","Place");
+  var secondRow = createElement("tr","","bottomRow");
+  
+  mountains.appendChild(tableMaker);
+  master.appendChild(tableRow);
+  topRow.appendChild(named);
+  topRow.appendChild(high);
+  topRow.appendChild(place);
+  
+  for(var i=0, name, height, place, max=MOUNTAINS.length; i<max; i++){
+    const mtn = document.createElement('tr');
+    master.appendChild(mtn);
+    mtn.innerHTML = `
+    <td>${MOUNTAINS[i].name}</td>
+    <td>${MOUNTAINS[i].height}</td>
+    <td>${MOUNTAINS[i].place}</td>`;
+    
+    
+}
+  
+  
+  
+</script>
