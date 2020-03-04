@@ -73,9 +73,6 @@ var player = document.querySelector(`div[data-key="${event.keyCode}"]`);
 player.classList.add('playing'); 
 audio.currentTime = 0;
 audio.play();
-
-
-
 });
 
 window.addEventListener("transitionend", function (event){ 

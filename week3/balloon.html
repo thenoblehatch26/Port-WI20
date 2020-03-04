@@ -1,0 +1,28 @@
+<!doctype html>
+
+<p>🎈</p>
+
+<script>
+  // Your code here
+  let count = 10;
+  let up = 10;
+  let para = document.querySelector('p');
+window.addEventListener("keydown", function (event){
+if(up > 99){
+  para.replaceChild(document.createTextNode("💥"), para.firstChild);
+  remove();
+}else if(event.keyCode == 40){
+  up = up-1;
+  para.style.fontSize = `${up}px`;
+}else if(event.keyCode == 38){
+  up += count; 
+  para.style.fontSize = `${up}px`;
+}else{
+return 0;
+}
+});
+
+function remove(event) {
+  window.removeEventListener("keydown",remove);
+}
+</script>
