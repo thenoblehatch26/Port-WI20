@@ -1,0 +1,23 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "consolehelloworld.js",
+  "dependencies": {
+    "ini": "^1.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thenoblehatch26/Port-WI20.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thenoblehatch26/Port-WI20/issues"
+  },
+  "homepage": "https://github.com/thenoblehatch26/Port-WI20#readme"
+}
